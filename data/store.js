@@ -6,7 +6,7 @@ const STORE = {
   subcopy: "【店舗を一言で表すサブコピー】",
   description: "【店舗の特徴やこだわりを2〜3行程度で入力してください。】",
 
-  // 画像（images フォルダに配置）
+  // 画像
   images: {
     hero: "./images/hero.jpg",
     feature1: "./images/feature1.jpg",
@@ -25,7 +25,7 @@ const STORE = {
     { number: "03", title: "【こだわり03】", text: "【地域性・素材・サービスなどを説明してください。】", image: "./images/feature3.jpg" }
   ],
 
-  // メニュー：カテゴリ数・商品数は自由に増減可能
+  // メニュー
   menuCategories: [
     { id: "menu1", label: "【カテゴリ01】", items: [
       { name: "【商品名01】", description: "【説明】", price: "¥1,000" },
@@ -59,17 +59,62 @@ const STORE = {
     mapUrl: "https://www.google.com/maps/"
   },
 
+  // 予約・テイクアウト・デリバリー・決済
+  reservation: {
+    siteName: "",
+    url: ""
+  },
+  takeawayDelivery: {
+    uberEats: false,
+    demaeCan: false,
+    foodpanda: false,
+    wolt: false,
+    inStoreTakeout: false,
+    other: "",
+    none: false
+  },
+  payment: {
+    cash: false,
+    creditCard: false,
+    transitIc: false,
+    qr: false,
+    other: ""
+  },
+
   // 連絡先
   contact: {
     phone: "00-0000-0000",
     email: "info@example.com"
   },
 
-  // SNS
+  // SNS・LINE・求人
   socials: {
     instagram: "#",
-    facebook: "#",
-    x: "#"
+    x: "#",
+    lineOfficial: "#"
+  },
+  recruitment: {
+    enabled: false,
+    text: ""
+  },
+
+  // ヒアリングシートで選択された追加コンテンツ
+  additionalContent: {
+    reviews: [],
+    staff: [],
+    ingredients: [],
+    snsEmbed: false,
+    media: [],
+    googleMapEmbed: false,
+    reservationButton: false,
+    takeawayDisplay: false,
+    paymentDisplay: false,
+    multilingual: [],
+    faq: [],
+    recruitment: false,
+    privacyPolicy: false,
+    structuredData: true,
+    favicon: ""
   }
 };
 
