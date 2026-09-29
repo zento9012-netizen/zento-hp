@@ -1,76 +1,55 @@
 const STORE = {
-  // 基本情報
-  name: "【STORE NAME】",
-  shortName: "【STORE】",
-  catchcopy: "【メインキャッチコピー】",
-  subcopy: "【店舗を一言で表すサブコピー】",
-  description: "【店舗の特徴やこだわりを2〜3行程度で入力してください。】",
+  // お食事処 北の屋（公開情報として確認できた内容のみ反映）
+  name: "お食事処 北の屋",
+  shortName: "北の屋",
+  catchcopy: "十三で親しまれる食堂",
+  subcopy: "定食を中心としたお食事処",
+  description: "大阪・十三元今里にあるお食事処 北の屋。公開情報で確認できた店舗情報をもとに掲載しています。詳細なメニュー・店舗のこだわり等は店舗確認後に追加します。",
 
-  // 画像
+  // 画像：店舗提供写真が未確認のため仮画像は公開コンテンツとして使用しない
   images: {
-    hero: "./images/hero.jpg",
-    feature1: "./images/feature1.jpg",
-    feature2: "./images/feature2.jpg",
-    feature3: "./images/feature3.jpg",
-    gallery1: "./images/gallery1.jpg",
-    gallery2: "./images/gallery2.jpg",
-    gallery3: "./images/gallery3.jpg",
-    gallery4: "./images/gallery4.jpg"
+    hero: "",
+    feature1: "",
+    feature2: "",
+    feature3: "",
+    gallery1: "",
+    gallery2: "",
+    gallery3: "",
+    gallery4: ""
   },
 
-  // 3つのこだわり
+  // 3つのこだわり：未確認情報は推測しない
   features: [
-    { number: "01", title: "【こだわり01】", text: "【この店舗ならではの特徴・強みを説明してください。】", image: "./images/feature1.jpg" },
-    { number: "02", title: "【こだわり02】", text: "【商品・接客・空間などの魅力を説明してください。】", image: "./images/feature2.jpg" },
-    { number: "03", title: "【こだわり03】", text: "【地域性・素材・サービスなどを説明してください。】", image: "./images/feature3.jpg" }
+    { number: "01", title: "公開情報を確認中", text: "店舗独自のこだわりは店舗への確認後に掲載します。", image: "" },
+    { number: "02", title: "メニュー情報を確認中", text: "最新のメニュー・価格は店舗確認後に掲載します。", image: "" },
+    { number: "03", title: "店舗情報を正確に掲載", text: "住所・営業時間など、確認できた情報を中心に掲載します。", image: "" }
   ],
 
-  // メニュー
-  menuCategories: [
-    { id: "menu1", label: "【カテゴリ01】", items: [
-      { name: "【商品名01】", description: "【説明】", price: "¥1,000" },
-      { name: "【商品名02】", description: "【説明】", price: "¥1,200" },
-      { name: "【商品名03】", description: "【説明】", price: "¥1,400" }
-    ]},
-    { id: "menu2", label: "【カテゴリ02】", items: [
-      { name: "【商品名01】", description: "【説明】", price: "¥800" },
-      { name: "【商品名02】", description: "【説明】", price: "¥900" }
-    ]},
-    { id: "menu3", label: "【カテゴリ03】", items: [
-      { name: "【商品名01】", description: "【説明】", price: "¥500" },
-      { name: "【商品名02】", description: "【説明】", price: "¥600" }
-    ]}
-  ],
+  // メニュー：公開情報から価格まで確実に確認できていないため保留
+  menuCategories: [],
 
-  // お知らせ
-  news: [
-    { date: "2026.00.00", title: "【お知らせタイトル】", text: "【お知らせ本文】" },
-    { date: "2026.00.00", title: "【新商品・キャンペーン】", text: "【お知らせ本文】" },
-    { date: "2026.00.00", title: "【営業に関するお知らせ】", text: "【お知らせ本文】" }
-  ],
+  // お知らせ：店舗からの情報未提供のため保留
+  news: [],
 
   // 店舗情報
   access: {
-    address: "〒000-0000 【都道府県】【市区町村】【住所】",
-    phone: "00-0000-0000",
-    hours: "【11:00〜21:00】",
-    closed: "【定休日】",
-    parking: "【駐車場情報】",
-    mapUrl: "https://www.google.com/maps/"
+    address: "大阪府大阪市淀川区十三元今里2-7-1",
+    phone: "06-6305-9732",
+    hours: "11:00〜20:00（公開情報で確認した範囲）",
+    closed: "日曜日（公開情報で確認した範囲）",
+    parking: "未確認",
+    mapUrl: "https://www.google.com/maps/search/?api=1&query=%E3%81%8A%E9%A3%9F%E4%BA%8B%E5%87%A6%20%E5%8C%97%E3%81%AE%E5%B1%8B%20%E5%A4%A7%E9%98%AA%E5%B8%82%E6%B7%80%E5%B7%9D%E5%8C%BA%E5%8D%81%E4%B8%89%E5%85%83%E4%BB%8A%E9%87%8C2-7-1"
   },
 
-  // 予約・テイクアウト・デリバリー・決済
-  reservation: {
-    siteName: "",
-    url: ""
-  },
+  // 予約・テイクアウト・デリバリー・決済：未確認
+  reservation: { siteName: "", url: "" },
   takeawayDelivery: {
     uberEats: false,
     demaeCan: false,
     foodpanda: false,
     wolt: false,
     inStoreTakeout: false,
-    other: "",
+    other: "未確認",
     none: false
   },
   payment: {
@@ -78,27 +57,24 @@ const STORE = {
     creditCard: false,
     transitIc: false,
     qr: false,
-    other: ""
+    other: "未確認"
   },
 
   // 連絡先
   contact: {
-    phone: "00-0000-0000",
-    email: "info@example.com"
+    phone: "06-6305-9732",
+    email: ""
   },
 
-  // SNS・LINE・求人
+  // SNS：公開情報でInstagramの掲載を確認。URLは店舗公式アカウントとして確認後に確定
   socials: {
-    instagram: "#",
-    x: "#",
-    lineOfficial: "#"
+    instagram: "",
+    x: "",
+    lineOfficial: ""
   },
-  recruitment: {
-    enabled: false,
-    text: ""
-  },
+  recruitment: { enabled: false, text: "" },
 
-  // ヒアリングシートで選択された追加コンテンツ
+  // ヒアリングシートで追加情報が確認できるまで保留
   additionalContent: {
     reviews: [],
     staff: [],
@@ -112,7 +88,7 @@ const STORE = {
     multilingual: [],
     faq: [],
     recruitment: false,
-    privacyPolicy: false,
+    privacyPolicy: true,
     structuredData: true,
     favicon: ""
   }
