@@ -56,7 +56,7 @@ const ZENTO = {
     eyebrow: "LET'S CREATE WHAT'S NEXT.",
     title: "その店の「これから」を、<br>一緒につくろう。",
     description: "ホームページ制作から、お客様との接点づくりまで。ZENTOに、あなたのお店の話を聞かせてください。",
-    email: "info@zento.example",
+    email: "zento9012@gmail.com",
     cta: "CONTACT ZENTO"
   },
 
