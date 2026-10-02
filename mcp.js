@@ -1,1 +1,0 @@
-// ZENTO remote MCP bridge placeholder
